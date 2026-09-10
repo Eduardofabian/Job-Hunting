@@ -1,0 +1,20 @@
+# Credenciais
+.env
+
+# Banco de dados local (dados pessoais)
+data/jobs.duckdb
+
+# Exports gerados (dados pessoais)
+data/exports/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
