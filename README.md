@@ -13,6 +13,24 @@ job-hunting automates this: run one command, get a curated report of relevant op
 
 ---
 
+## Vision
+
+Today it is a **radar** — it finds the openings. The goal is a full job-hunting
+assistant that carries a role from discovery to offer:
+
+| Stage | Now | Next |
+|-------|-----|------|
+| **Discover** | Multi-source search + noise filtering | Playwright for sources search engines don't index |
+| **Evaluate** | Manual review of the Markdown report | LLM fit score (0–10) per opening against your profile |
+| **Apply** | Copy link, tailor CV by hand | Draft a per-job CV + cover letter from a base profile |
+| **Track** | `--status` flag in the CLI | Timeline per application, follow-up reminders |
+| **Run** | Manual `python main.py --export` | GitHub Actions cron + Telegram alerts for high-fit jobs |
+
+The CLI and DuckDB schema are built to absorb these without a rewrite — each
+stage is a column on the existing `jobs` table and a new command.
+
+---
+
 ## How It Works
 
 ```bash
@@ -89,9 +107,7 @@ GOOGLE_CSE_ID=your_cx_here
 
 ---
 
-## Roadmap
-
-### v1 (current)
+## Status — v1
 
 - [x] Multi-source search via DuckDuckGo
 - [x] Job description extraction per domain
@@ -99,13 +115,7 @@ GOOGLE_CSE_ID=your_cx_here
 - [x] Markdown export grouped by category
 - [x] CLI with status tracking
 
-### v2 (planned)
-
-- [ ] Google Custom Search API (GCP — currently blocked by a propagation bug)
-- [ ] Playwright scraping for platforms DuckDuckGo doesn't index (e.g. GeekHunter)
-- [ ] LLM-based relevance scoring (Claude API) — fit score 0–10 per job
-- [ ] GitHub Actions cron — run automatically every Monday
-- [ ] Telegram notifications for high-fit jobs
+Next steps are in [Vision](#vision) above.
 
 ---
 
