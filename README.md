@@ -123,7 +123,7 @@ Next steps are in [Vision](#vision) above.
 
 Google Custom Search API was the first approach — blocked by a GCP propagation bug (403 on every request despite the API being enabled and billing linked). That code path is still in `scraper.py`; set `USE_GOOGLE_API = True` in `config.py` to use it once resolved.
 
-Direct platform scraping (Playwright) is more robust but heavier — planned for v2.
+Direct platform scraping (Playwright) is more robust but heavier — see the Discover row in [Vision](#vision).
 
 ---
 
