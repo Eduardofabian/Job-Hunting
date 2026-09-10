@@ -91,7 +91,7 @@ LinkedIn and Glassdoor are intentionally excluded — their ToS forbids automate
 ## Setup
 
 ```bash
-git clone https://github.com/EduardoFabian/Job-Hunting.git
+git clone https://github.com/Eduardofabian/Job-Hunting.git
 cd Job-Hunting
 pip install -r requirements.txt
 ```
