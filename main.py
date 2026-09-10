@@ -1,5 +1,5 @@
 """
-job-radar — CLI entry point.
+job-hunting — CLI entry point.
 
 Commands:
   python main.py               search and store jobs
@@ -73,7 +73,7 @@ def main():
     if sys.stdout.encoding.lower() != "utf-8":
         sys.stdout.reconfigure(encoding="utf-8")
 
-    parser = argparse.ArgumentParser(description="job-radar — busca vagas remotas")
+    parser = argparse.ArgumentParser(description="job-hunting — busca vagas remotas")
     parser.add_argument("--export", action="store_true", help="busca + exporta .md")
     parser.add_argument("--export-only", action="store_true", help="só exporta, sem buscar")
     parser.add_argument("--status", nargs=2, metavar=("STATUS", "URL"), help="atualiza status de uma vaga")

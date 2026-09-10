@@ -27,7 +27,7 @@ CATEGORY_EMOJI = {
 
 def export_md(jobs: list[dict]) -> Path:
     today = date.today().isoformat()
-    lines = [f"# Job Radar — {today}", f"_{len(jobs)} vagas encontradas_", "", "---", ""]
+    lines = [f"# Job Hunting — {today}", f"_{len(jobs)} vagas encontradas_", "", "---", ""]
 
     by_categoria: dict[str, list[dict]] = {}
     for job in jobs:

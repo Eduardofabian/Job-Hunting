@@ -1,4 +1,4 @@
-# job-radar 🎯
+# job-hunting 🎯
 
 > Automated job search CLI for data roles in Brazil.
 > Searches 7 sources, deduplicates results, stores in DuckDB and exports a Markdown report — ready to apply.
@@ -9,7 +9,7 @@
 
 Finding remote data jobs in Brazil means checking Gupy, Indeed, InHire, Remotar and more — all manually, with no history and no stack-based filtering. Most job boards only let you search by title, not by the actual technologies required.
 
-job-radar automates this: run one command, get a curated report of relevant openings across all sources, filtered by your stack.
+job-hunting automates this: run one command, get a curated report of relevant openings across all sources, filtered by your stack.
 
 ---
 
@@ -73,8 +73,8 @@ LinkedIn and Glassdoor are intentionally excluded — their ToS forbids automate
 ## Setup
 
 ```bash
-git clone https://github.com/EduardoFabian/job-radar.git
-cd job-radar
+git clone https://github.com/EduardoFabian/Job-Hunting.git
+cd Job-Hunting
 pip install -r requirements.txt
 ```
 
@@ -120,7 +120,7 @@ Direct platform scraping (Playwright) is more robust but heavier — planned for
 ## Project Structure
 
 ```text
-job-radar/
+job-hunting/
 ├── main.py         # CLI entry point
 ├── scraper.py      # DuckDuckGo search + URL parsing + filters
 ├── parser.py       # Job description extractor
